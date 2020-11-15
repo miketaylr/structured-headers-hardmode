@@ -2,8 +2,16 @@
 
 ![Hard mode icon](shared/icon.png)
 
+A web extension to stress out servers with structured headers syntax. It will add the following
+two headers to every request:
 
-A web extension to stress out servers with structured headers syntax.
+```
+sec-hardmode-list: "b", c1/2, "good\"\\\\luck", ("foo"; a=1;b=?0);lvl=5, (), (e f);lvl=-1
+sec-hardmoe-dict: lol="ok", sup=:w4ZibGV0w6ZydGU=:, a=(1 2.1), c=4;aa=bb, d=(5 6);cool
+```
+
+You can click on the browser action icon to turn it off, in case it breaks something.
+
 
 This repo contains a WebExtension that can be installed in Chrome and Firefox. Patches are welcome for 
 supporting other browsers. Kindly send $100USD with any patches for Safari (to pay for Apple Developer 
