@@ -1,5 +1,8 @@
 # Structured Header Hard Mode
 
+![Hard mode icon](shared/icon.png)
+
+
 A web extension to stress out servers with structured headers syntax.
 
 This repo contains a WebExtension that can be installed in Chrome and Firefox. Patches are welcome for 
