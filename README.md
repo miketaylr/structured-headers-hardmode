@@ -2,7 +2,7 @@
 
 ![Hard mode icon](shared/icon.png)
 
-A web extension to stress out servers with structured headers syntax. It will add the following
+A web extension to stress out servers with [structured headers](https://tools.ietf.org/html/draft-ietf-httpbis-header-structure-19). It will add the following
 two headers to every request:
 
 ```
