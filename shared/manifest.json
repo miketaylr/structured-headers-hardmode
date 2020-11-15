@@ -1,0 +1,23 @@
+{
+  "description": "HTTP Structured Headers: Hard mode for the web.",
+  "manifest_version": 2,
+  "name": "Structured Headers Hard Mode",
+  "version": "1.0",
+  "homepage_url": "https://github.com/miketaylr/structured-headers-hardmode",
+  "icons": {
+    "128": "icons/icon.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": "icons/icon.png"
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ]
+}

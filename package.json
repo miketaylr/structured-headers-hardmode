@@ -1,0 +1,32 @@
+{
+  "name": "structured-headers-hardmode",
+  "version": "1.0.0",
+  "description": "Web Extension to inject structured headers into every HTTP response.",
+  "scripts": {
+    "build:clean": "shx rm -rf ./dist/ && shx rm -rf ./bin/",
+    "build:chrome": "webpack --env.browser=chrome",
+    "build:firefox": "webpack --env.browser=firefox",
+    "package:chrome": "npm run build:chrome && crx pack dist/chrome -o bin/structured_headers_hard_mode-1.0.0.crx",
+    "package:firefox": "web-ext build --source-dir=dist/firefox --artifacts-dir=bin --overwrite-dest",
+    "start:firefox": "npm run build:firefox && web-ext run --source-dir ./dist/firefox/"
+  },
+  "author": "Mike Taylor",
+  "license": "CC0-1.0",
+  "dependencies": {},
+  "devDependencies": {
+    "copy-webpack-plugin": "^6.3.1",
+    "crx": "^5.0.1",
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.2",
+    "shx": "^0.3.3",
+    "web-ext": "^5.3.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miketaylr/structured-headers-hardmode"
+  }
+}
