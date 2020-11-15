@@ -1,4 +1,4 @@
-# Structured Header Hard Mode
+# Structured Headers Hard Mode
 
 ![Hard mode icon](shared/icon.png)
 
